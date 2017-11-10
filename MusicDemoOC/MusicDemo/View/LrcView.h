@@ -1,9 +1,9 @@
 //
-//  ZHLrcView.h
-//  QQMusic
+//  LrcView.h
+//  MusicDemo
 //
-//  Created by niugaohang on 15/9/11.
-//  Copyright (c) 2015年 niu. All rights reserved.
+//  Created by 沈凯 on 2017/11/9.
+//  Copyright © 2017年 Ssky. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

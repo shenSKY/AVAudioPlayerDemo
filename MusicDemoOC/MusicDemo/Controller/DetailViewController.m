@@ -43,12 +43,26 @@
 
 @implementation DetailViewController
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self becomeFirstResponder];
+    [[UIApplication sharedApplication]beginReceivingRemoteControlEvents];
+}
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self resignFirstResponder];
+    [[UIApplication sharedApplication]endReceivingRemoteControlEvents];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    UI设置
     [self setUI];
 //    播放音乐
     [self playMusic];
+//    后台播放
+    [self playingBackground];
 //    设置进度定时器
     [self addProgressTimer];
 //    设置歌词定时器
@@ -102,6 +116,28 @@
     [self.img.layer startAnimate];
     
     self.playBtn.selected = YES;
+//    设置锁屏信息显示
+    [self setLockScreenDisplay];
+}
+#pragma mark 设置锁屏信息显示
+- (void)setLockScreenDisplay
+{
+    NSMutableDictionary *info = [NSMutableDictionary dictionary];
+    [info setObject:self.model.name forKey:MPMediaItemPropertyTitle];//歌名
+    [info setObject:self.model.singer forKey:MPMediaItemPropertyArtist];//作者
+//    [info setObject:self.model.filename forKey:MPMediaItemPropertyAlbumTitle];//专辑名
+    [info setObject:self.model.singer forKey:MPMediaItemPropertyAlbumArtist];//专辑作者
+    [info setObject:[[MPMediaItemArtwork alloc]initWithImage:[UIImage imageNamed:self.model.icon]] forKey:MPMediaItemPropertyArtwork];//显示的图片
+    [info setObject:[NSNumber numberWithDouble:self.audioPlayer.duration] forKey:MPMediaItemPropertyPlaybackDuration];//总时长
+    [info setObject:[NSNumber numberWithFloat:1.0] forKey:MPNowPlayingInfoPropertyPlaybackRate];//播放速率
+    [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:info];
+}
+#pragma mark 后台播放
+- (void)playingBackground
+{
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [session setActive:YES error:nil];
 }
 #pragma mark 按钮方法
 - (IBAction)previousAndNextBtnAction:(UIButton *)sender {
@@ -115,16 +151,33 @@
 - (IBAction)playBtnActiosn:(UIButton *)sender {
 //    判断是否处于播放状态
     if (sender.isSelected) {
-        [sender setSelected:NO];
+        [self resumeAndPauseWhtherPause:YES];
+    }else {
+        [self resumeAndPauseWhtherPause:NO];
+    }
+}
+#pragma mark 播放暂停方法
+- (void)resumeAndPauseWhtherPause:(BOOL)status
+{
+    self.playBtn.selected = !self.playBtn.selected;
+    
+    NSMutableDictionary *info = [[[MPNowPlayingInfoCenter defaultCenter]nowPlayingInfo] mutableCopy];
+    if (status) {
         [self.img.layer pauseAnimate];
         [self.audioPlayer pause];
         [self.progressTimer pauseTimer];
-    }else {
-        [sender setSelected:YES];
+        
+        [info setObject:[NSNumber numberWithFloat:0.00001] forKey:MPNowPlayingInfoPropertyPlaybackRate];
+        [info setObject:[NSNumber numberWithDouble:self.audioPlayer.currentTime] forKey:MPNowPlayingInfoPropertyElapsedPlaybackTime];
+    }else
+    {
         [self.img.layer resumeAnimate];
         [self.audioPlayer play];
         [self.progressTimer resumeTimer];
+        
+        [info setObject:[NSNumber numberWithFloat:1.0] forKey:MPNowPlayingInfoPropertyPlaybackRate];
     }
+    [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:info];
 }
 #pragma mark 切换歌曲方法
 - (void)switchMusicWhetherNext:(BOOL)flag
@@ -255,5 +308,37 @@
 //    设置iconView和歌词Label的透明度
     self.img.alpha = 1 - offsetRatio;
     self.lrcLabel.alpha = 1 - offsetRatio;
+}
+#pragma mark 锁屏控制
+- (void)remoteControlReceivedWithEvent:(UIEvent *)event
+{
+    switch (event.subtype) {
+        case UIEventSubtypeRemoteControlPlay://播放
+            [self resumeAndPauseWhtherPause:NO];
+            break;
+        case UIEventSubtypeRemoteControlPause://暂停
+            [self resumeAndPauseWhtherPause:YES];
+            break;
+        case UIEventSubtypeRemoteControlStop://停止
+            break;
+        case UIEventSubtypeRemoteControlTogglePlayPause://切换播放暂停（耳机线控）
+            break;
+        case UIEventSubtypeRemoteControlNextTrack://下一首
+            [self switchMusicWhetherNext:YES];
+            break;
+        case UIEventSubtypeRemoteControlPreviousTrack://上一首
+            [self switchMusicWhetherNext:NO];
+            break;
+        case UIEventSubtypeRemoteControlBeginSeekingBackward://开始快退
+            break;
+        case UIEventSubtypeRemoteControlEndSeekingBackward://结束快退
+            break;
+        case UIEventSubtypeRemoteControlBeginSeekingForward://开始快进
+            break;
+        case UIEventSubtypeRemoteControlEndSeekingForward://结束快进
+            break;
+        default:
+            break;
+    }
 }
 @end

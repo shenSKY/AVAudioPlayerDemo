@@ -67,7 +67,7 @@
                                 <state key="selected" image="player_btn_pause_normal"/>
                                 <state key="highlighted" image="player_btn_play_highlight"/>
                                 <connections>
-                                    <action selector="playBtnAction:" destination="-1" eventType="touchUpInside" id="xEd-Nx-era"/>
+                                    <action selector="playBtnActiosn:" destination="-1" eventType="touchUpInside" id="ANp-bY-WU5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8b-Q1-2Ov">
