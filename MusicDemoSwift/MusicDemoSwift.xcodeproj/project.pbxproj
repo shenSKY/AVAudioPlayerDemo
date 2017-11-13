@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		578FAFC41FB930BD00E8446D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578FAFC31FB930BD00E8446D /* AppDelegate.swift */; };
+		578FAFC61FB930BD00E8446D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578FAFC51FB930BD00E8446D /* ViewController.swift */; };
+		578FAFC91FB930BD00E8446D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFC71FB930BD00E8446D /* Main.storyboard */; };
+		578FAFCB1FB930BD00E8446D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFCA1FB930BD00E8446D /* Assets.xcassets */; };
+		578FAFCE1FB930BD00E8446D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFCC1FB930BD00E8446D /* LaunchScreen.storyboard */; };
+		578FAFDB1FB9370400E8446D /* Musics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFDA1FB9370400E8446D /* Musics.plist */; };
+		578FAFE81FB9372C00E8446D /* 后弦 - 小周末.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFDD1FB9372B00E8446D /* 后弦 - 小周末.mp3 */; };
+		578FAFE91FB9372C00E8446D /* 309769.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFDE1FB9372B00E8446D /* 309769.mp3 */; };
+		578FAFEA1FB9372C00E8446D /* 14945107.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFDF1FB9372B00E8446D /* 14945107.mp3 */; };
+		578FAFEB1FB9372C00E8446D /* 10736444.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFE01FB9372B00E8446D /* 10736444.mp3 */; };
+		578FAFEC1FB9372C00E8446D /* 255319.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFE11FB9372B00E8446D /* 255319.mp3 */; };
+		578FAFED1FB9372C00E8446D /* 339744.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFE21FB9372B00E8446D /* 339744.mp3 */; };
+		578FAFEE1FB9372C00E8446D /* 10405520.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFE31FB9372B00E8446D /* 10405520.mp3 */; };
+		578FAFEF1FB9372C00E8446D /* 1201111234.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFE41FB9372B00E8446D /* 1201111234.mp3 */; };
+		578FAFF01FB9372C00E8446D /* 120125029.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFE51FB9372B00E8446D /* 120125029.mp3 */; };
+		578FAFF11FB9372C00E8446D /* 12309111.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFE61FB9372C00E8446D /* 12309111.mp3 */; };
+		578FAFF21FB9372C00E8446D /* 235319.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFE71FB9372C00E8446D /* 235319.mp3 */; };
+		578FAFFF1FB9374400E8446D /* 14945107.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFF41FB9374300E8446D /* 14945107.lrc */; };
+		578FB0001FB9374400E8446D /* 10405520.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFF51FB9374300E8446D /* 10405520.lrc */; };
+		578FB0011FB9374400E8446D /* 255319.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFF61FB9374300E8446D /* 255319.lrc */; };
+		578FB0021FB9374400E8446D /* 12309111.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFF71FB9374300E8446D /* 12309111.lrc */; };
+		578FB0031FB9374400E8446D /* 339744.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFF81FB9374300E8446D /* 339744.lrc */; };
+		578FB0041FB9374400E8446D /* 10736444.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFF91FB9374300E8446D /* 10736444.lrc */; };
+		578FB0051FB9374400E8446D /* 309769.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFFA1FB9374300E8446D /* 309769.lrc */; };
+		578FB0061FB9374400E8446D /* 120125029.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFFB1FB9374400E8446D /* 120125029.lrc */; };
+		578FB0071FB9374400E8446D /* 月半小夜曲.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFFC1FB9374400E8446D /* 月半小夜曲.lrc */; };
+		578FB0081FB9374400E8446D /* 235319.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFFD1FB9374400E8446D /* 235319.lrc */; };
+		578FB0091FB9374400E8446D /* 后弦 - 小周末-bb0b7b6dec6a924c2ea9ff1dec40634c-17520166-00000000.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFFE1FB9374400E8446D /* 后弦 - 小周末-bb0b7b6dec6a924c2ea9ff1dec40634c-17520166-00000000.lrc */; };
+		578FB01F1FB9375F00E8446D /* dzq_icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 578FB00B1FB9375E00E8446D /* dzq_icon@2x.jpg */; };
+		578FB0201FB9375F00E8446D /* dzq@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 578FB00C1FB9375E00E8446D /* dzq@2x.jpg */; };
+		578FB0211FB9375F00E8446D /* jay_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 578FB00D1FB9375E00E8446D /* jay_icon@2x.png */; };
+		578FB0221FB9375F00E8446D /* jj_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 578FB00E1FB9375E00E8446D /* jj_icon@2x.png */; };
+		578FB0231FB9375F00E8446D /* kzxd@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 578FB00F1FB9375E00E8446D /* kzxd@2x.jpg */; };
+		578FB0241FB9375F00E8446D /* eason_icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 578FB0101FB9375E00E8446D /* eason_icon@2x.jpg */; };
+		578FB0251FB9375F00E8446D /* wf_icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 578FB0111FB9375E00E8446D /* wf_icon@2x.jpg */; };
+		578FB0261FB9375F00E8446D /* jay@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 578FB0121FB9375E00E8446D /* jay@2x.jpg */; };
+		578FB0271FB9375F00E8446D /* bb@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 578FB0131FB9375E00E8446D /* bb@2x.jpg */; };
+		578FB0281FB9375F00E8446D /* lkq_icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 578FB0141FB9375E00E8446D /* lkq_icon@2x.jpg */; };
+		578FB0291FB9375F00E8446D /* nanquan_icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 578FB0151FB9375E00E8446D /* nanquan_icon@2x.jpg */; };
+		578FB02A1FB9375F00E8446D /* bb_icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 578FB0161FB9375E00E8446D /* bb_icon@2x.jpg */; };
+		578FB02B1FB9375F00E8446D /* kzxd_icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 578FB0171FB9375F00E8446D /* kzxd_icon@2x.jpg */; };
+		578FB02C1FB9375F00E8446D /* zxy_icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 578FB0181FB9375F00E8446D /* zxy_icon@2x.jpg */; };
+		578FB02D1FB9375F00E8446D /* lkq@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 578FB0191FB9375F00E8446D /* lkq@2x.jpg */; };
+		578FB02E1FB9375F00E8446D /* eason@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 578FB01A1FB9375F00E8446D /* eason@2x.jpg */; };
+		578FB02F1FB9375F00E8446D /* jj@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 578FB01B1FB9375F00E8446D /* jj@2x.jpg */; };
+		578FB0301FB9375F00E8446D /* nanquan@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 578FB01C1FB9375F00E8446D /* nanquan@2x.jpg */; };
+		578FB0311FB9375F00E8446D /* zxy@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 578FB01D1FB9375F00E8446D /* zxy@2x.jpg */; };
+		578FB0321FB9375F00E8446D /* wf@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 578FB01E1FB9375F00E8446D /* wf@2x.jpg */; };
+		578FB0391FB9385D00E8446D /* MainPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578FB0371FB9385D00E8446D /* MainPageCell.swift */; };
+		578FB03A1FB9385D00E8446D /* MainPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 578FB0381FB9385D00E8446D /* MainPageCell.xib */; };
+		578FB03C1FB93A0800E8446D /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578FB03B1FB93A0800E8446D /* MusicModel.swift */; };
+		578FB03F1FB9445200E8446D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578FB03D1FB9445200E8446D /* DetailViewController.swift */; };
+		578FB0401FB9445200E8446D /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 578FB03E1FB9445200E8446D /* DetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		578FAFC01FB930BD00E8446D /* MusicDemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicDemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		578FAFC31FB930BD00E8446D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		578FAFC51FB930BD00E8446D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		578FAFC81FB930BD00E8446D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		578FAFCA1FB930BD00E8446D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		578FAFCD1FB930BD00E8446D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		578FAFCF1FB930BD00E8446D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		578FAFDA1FB9370400E8446D /* Musics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Musics.plist; sourceTree = "<group>"; };
+		578FAFDD1FB9372B00E8446D /* 后弦 - 小周末.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "后弦 - 小周末.mp3"; sourceTree = "<group>"; };
+		578FAFDE1FB9372B00E8446D /* 309769.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 309769.mp3; sourceTree = "<group>"; };
+		578FAFDF1FB9372B00E8446D /* 14945107.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 14945107.mp3; sourceTree = "<group>"; };
+		578FAFE01FB9372B00E8446D /* 10736444.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10736444.mp3; sourceTree = "<group>"; };
+		578FAFE11FB9372B00E8446D /* 255319.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 255319.mp3; sourceTree = "<group>"; };
+		578FAFE21FB9372B00E8446D /* 339744.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 339744.mp3; sourceTree = "<group>"; };
+		578FAFE31FB9372B00E8446D /* 10405520.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10405520.mp3; sourceTree = "<group>"; };
+		578FAFE41FB9372B00E8446D /* 1201111234.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1201111234.mp3; sourceTree = "<group>"; };
+		578FAFE51FB9372B00E8446D /* 120125029.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 120125029.mp3; sourceTree = "<group>"; };
+		578FAFE61FB9372C00E8446D /* 12309111.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 12309111.mp3; sourceTree = "<group>"; };
+		578FAFE71FB9372C00E8446D /* 235319.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 235319.mp3; sourceTree = "<group>"; };
+		578FAFF41FB9374300E8446D /* 14945107.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 14945107.lrc; sourceTree = "<group>"; };
+		578FAFF51FB9374300E8446D /* 10405520.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 10405520.lrc; sourceTree = "<group>"; };
+		578FAFF61FB9374300E8446D /* 255319.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 255319.lrc; sourceTree = "<group>"; };
+		578FAFF71FB9374300E8446D /* 12309111.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 12309111.lrc; sourceTree = "<group>"; };
+		578FAFF81FB9374300E8446D /* 339744.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 339744.lrc; sourceTree = "<group>"; };
+		578FAFF91FB9374300E8446D /* 10736444.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 10736444.lrc; sourceTree = "<group>"; };
+		578FAFFA1FB9374300E8446D /* 309769.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 309769.lrc; sourceTree = "<group>"; };
+		578FAFFB1FB9374400E8446D /* 120125029.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 120125029.lrc; sourceTree = "<group>"; };
+		578FAFFC1FB9374400E8446D /* 月半小夜曲.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "月半小夜曲.lrc"; sourceTree = "<group>"; };
+		578FAFFD1FB9374400E8446D /* 235319.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 235319.lrc; sourceTree = "<group>"; };
+		578FAFFE1FB9374400E8446D /* 后弦 - 小周末-bb0b7b6dec6a924c2ea9ff1dec40634c-17520166-00000000.lrc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "后弦 - 小周末-bb0b7b6dec6a924c2ea9ff1dec40634c-17520166-00000000.lrc"; sourceTree = "<group>"; };
+		578FB00B1FB9375E00E8446D /* dzq_icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dzq_icon@2x.jpg"; sourceTree = "<group>"; };
+		578FB00C1FB9375E00E8446D /* dzq@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dzq@2x.jpg"; sourceTree = "<group>"; };
+		578FB00D1FB9375E00E8446D /* jay_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jay_icon@2x.png"; sourceTree = "<group>"; };
+		578FB00E1FB9375E00E8446D /* jj_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jj_icon@2x.png"; sourceTree = "<group>"; };
+		578FB00F1FB9375E00E8446D /* kzxd@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kzxd@2x.jpg"; sourceTree = "<group>"; };
+		578FB0101FB9375E00E8446D /* eason_icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "eason_icon@2x.jpg"; sourceTree = "<group>"; };
+		578FB0111FB9375E00E8446D /* wf_icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wf_icon@2x.jpg"; sourceTree = "<group>"; };
+		578FB0121FB9375E00E8446D /* jay@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jay@2x.jpg"; sourceTree = "<group>"; };
+		578FB0131FB9375E00E8446D /* bb@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bb@2x.jpg"; sourceTree = "<group>"; };
+		578FB0141FB9375E00E8446D /* lkq_icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lkq_icon@2x.jpg"; sourceTree = "<group>"; };
+		578FB0151FB9375E00E8446D /* nanquan_icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "nanquan_icon@2x.jpg"; sourceTree = "<group>"; };
+		578FB0161FB9375E00E8446D /* bb_icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bb_icon@2x.jpg"; sourceTree = "<group>"; };
+		578FB0171FB9375F00E8446D /* kzxd_icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kzxd_icon@2x.jpg"; sourceTree = "<group>"; };
+		578FB0181FB9375F00E8446D /* zxy_icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "zxy_icon@2x.jpg"; sourceTree = "<group>"; };
+		578FB0191FB9375F00E8446D /* lkq@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lkq@2x.jpg"; sourceTree = "<group>"; };
+		578FB01A1FB9375F00E8446D /* eason@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "eason@2x.jpg"; sourceTree = "<group>"; };
+		578FB01B1FB9375F00E8446D /* jj@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jj@2x.jpg"; sourceTree = "<group>"; };
+		578FB01C1FB9375F00E8446D /* nanquan@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "nanquan@2x.jpg"; sourceTree = "<group>"; };
+		578FB01D1FB9375F00E8446D /* zxy@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "zxy@2x.jpg"; sourceTree = "<group>"; };
+		578FB01E1FB9375F00E8446D /* wf@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wf@2x.jpg"; sourceTree = "<group>"; };
+		578FB0371FB9385D00E8446D /* MainPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageCell.swift; sourceTree = "<group>"; };
+		578FB0381FB9385D00E8446D /* MainPageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageCell.xib; sourceTree = "<group>"; };
+		578FB03B1FB93A0800E8446D /* MusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
+		578FB03D1FB9445200E8446D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		578FB03E1FB9445200E8446D /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		578FAFBD1FB930BD00E8446D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		578FAFB71FB930BD00E8446D = {
+			isa = PBXGroup;
+			children = (
+				578FAFC21FB930BD00E8446D /* MusicDemoSwift */,
+				578FAFC11FB930BD00E8446D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		578FAFC11FB930BD00E8446D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				578FAFC01FB930BD00E8446D /* MusicDemoSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		578FAFC21FB930BD00E8446D /* MusicDemoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				578FB0361FB9382D00E8446D /* Category */,
+				578FB0351FB9381900E8446D /* View */,
+				578FB0341FB9381400E8446D /* Model */,
+				578FB0331FB9380D00E8446D /* Tool */,
+				578FAFD71FB936CC00E8446D /* Resources */,
+				578FAFD61FB9367400E8446D /* Controller */,
+				578FAFC31FB930BD00E8446D /* AppDelegate.swift */,
+				578FAFCA1FB930BD00E8446D /* Assets.xcassets */,
+				578FAFCC1FB930BD00E8446D /* LaunchScreen.storyboard */,
+				578FAFCF1FB930BD00E8446D /* Info.plist */,
+			);
+			path = MusicDemoSwift;
+			sourceTree = "<group>";
+		};
+		578FAFD61FB9367400E8446D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				578FAFC51FB930BD00E8446D /* ViewController.swift */,
+				578FAFC71FB930BD00E8446D /* Main.storyboard */,
+				578FB03D1FB9445200E8446D /* DetailViewController.swift */,
+				578FB03E1FB9445200E8446D /* DetailViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		578FAFD71FB936CC00E8446D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				578FAFDA1FB9370400E8446D /* Musics.plist */,
+				578FB00A1FB9374700E8446D /* Images */,
+				578FAFF31FB9373100E8446D /* Lrcs */,
+				578FAFDC1FB9370F00E8446D /* MP3s */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		578FAFDC1FB9370F00E8446D /* MP3s */ = {
+			isa = PBXGroup;
+			children = (
+				578FAFE71FB9372C00E8446D /* 235319.mp3 */,
+				578FAFE11FB9372B00E8446D /* 255319.mp3 */,
+				578FAFDE1FB9372B00E8446D /* 309769.mp3 */,
+				578FAFE21FB9372B00E8446D /* 339744.mp3 */,
+				578FAFE31FB9372B00E8446D /* 10405520.mp3 */,
+				578FAFE01FB9372B00E8446D /* 10736444.mp3 */,
+				578FAFE61FB9372C00E8446D /* 12309111.mp3 */,
+				578FAFDF1FB9372B00E8446D /* 14945107.mp3 */,
+				578FAFE51FB9372B00E8446D /* 120125029.mp3 */,
+				578FAFE41FB9372B00E8446D /* 1201111234.mp3 */,
+				578FAFDD1FB9372B00E8446D /* 后弦 - 小周末.mp3 */,
+			);
+			path = MP3s;
+			sourceTree = "<group>";
+		};
+		578FAFF31FB9373100E8446D /* Lrcs */ = {
+			isa = PBXGroup;
+			children = (
+				578FAFFD1FB9374400E8446D /* 235319.lrc */,
+				578FAFF61FB9374300E8446D /* 255319.lrc */,
+				578FAFFA1FB9374300E8446D /* 309769.lrc */,
+				578FAFF81FB9374300E8446D /* 339744.lrc */,
+				578FAFF51FB9374300E8446D /* 10405520.lrc */,
+				578FAFF91FB9374300E8446D /* 10736444.lrc */,
+				578FAFF71FB9374300E8446D /* 12309111.lrc */,
+				578FAFF41FB9374300E8446D /* 14945107.lrc */,
+				578FAFFB1FB9374400E8446D /* 120125029.lrc */,
+				578FAFFE1FB9374400E8446D /* 后弦 - 小周末-bb0b7b6dec6a924c2ea9ff1dec40634c-17520166-00000000.lrc */,
+				578FAFFC1FB9374400E8446D /* 月半小夜曲.lrc */,
+			);
+			path = Lrcs;
+			sourceTree = "<group>";
+		};
+		578FB00A1FB9374700E8446D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				578FB0161FB9375E00E8446D /* bb_icon@2x.jpg */,
+				578FB0131FB9375E00E8446D /* bb@2x.jpg */,
+				578FB00B1FB9375E00E8446D /* dzq_icon@2x.jpg */,
+				578FB00C1FB9375E00E8446D /* dzq@2x.jpg */,
+				578FB0101FB9375E00E8446D /* eason_icon@2x.jpg */,
+				578FB01A1FB9375F00E8446D /* eason@2x.jpg */,
+				578FB00D1FB9375E00E8446D /* jay_icon@2x.png */,
+				578FB0121FB9375E00E8446D /* jay@2x.jpg */,
+				578FB00E1FB9375E00E8446D /* jj_icon@2x.png */,
+				578FB01B1FB9375F00E8446D /* jj@2x.jpg */,
+				578FB0171FB9375F00E8446D /* kzxd_icon@2x.jpg */,
+				578FB00F1FB9375E00E8446D /* kzxd@2x.jpg */,
+				578FB0141FB9375E00E8446D /* lkq_icon@2x.jpg */,
+				578FB0191FB9375F00E8446D /* lkq@2x.jpg */,
+				578FB0151FB9375E00E8446D /* nanquan_icon@2x.jpg */,
+				578FB01C1FB9375F00E8446D /* nanquan@2x.jpg */,
+				578FB0111FB9375E00E8446D /* wf_icon@2x.jpg */,
+				578FB01E1FB9375F00E8446D /* wf@2x.jpg */,
+				578FB0181FB9375F00E8446D /* zxy_icon@2x.jpg */,
+				578FB01D1FB9375F00E8446D /* zxy@2x.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		578FB0331FB9380D00E8446D /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		578FB0341FB9381400E8446D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				578FB03B1FB93A0800E8446D /* MusicModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		578FB0351FB9381900E8446D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				578FB0371FB9385D00E8446D /* MainPageCell.swift */,
+				578FB0381FB9385D00E8446D /* MainPageCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		578FB0361FB9382D00E8446D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		578FAFBF1FB930BD00E8446D /* MusicDemoSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 578FAFD21FB930BD00E8446D /* Build configuration list for PBXNativeTarget "MusicDemoSwift" */;
+			buildPhases = (
+				578FAFBC1FB930BD00E8446D /* Sources */,
+				578FAFBD1FB930BD00E8446D /* Frameworks */,
+				578FAFBE1FB930BD00E8446D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusicDemoSwift;
+			productName = MusicDemoSwift;
+			productReference = 578FAFC01FB930BD00E8446D /* MusicDemoSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		578FAFB81FB930BD00E8446D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Ssky;
+				TargetAttributes = {
+					578FAFBF1FB930BD00E8446D = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 578FAFBB1FB930BD00E8446D /* Build configuration list for PBXProject "MusicDemoSwift" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 578FAFB71FB930BD00E8446D;
+			productRefGroup = 578FAFC11FB930BD00E8446D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				578FAFBF1FB930BD00E8446D /* MusicDemoSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		578FAFBE1FB930BD00E8446D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578FAFE91FB9372C00E8446D /* 309769.mp3 in Resources */,
+				578FAFF01FB9372C00E8446D /* 120125029.mp3 in Resources */,
+				578FAFCE1FB930BD00E8446D /* LaunchScreen.storyboard in Resources */,
+				578FB02C1FB9375F00E8446D /* zxy_icon@2x.jpg in Resources */,
+				578FAFF21FB9372C00E8446D /* 235319.mp3 in Resources */,
+				578FB0311FB9375F00E8446D /* zxy@2x.jpg in Resources */,
+				578FB0271FB9375F00E8446D /* bb@2x.jpg in Resources */,
+				578FB02F1FB9375F00E8446D /* jj@2x.jpg in Resources */,
+				578FAFED1FB9372C00E8446D /* 339744.mp3 in Resources */,
+				578FAFE81FB9372C00E8446D /* 后弦 - 小周末.mp3 in Resources */,
+				578FB02A1FB9375F00E8446D /* bb_icon@2x.jpg in Resources */,
+				578FB0201FB9375F00E8446D /* dzq@2x.jpg in Resources */,
+				578FB0011FB9374400E8446D /* 255319.lrc in Resources */,
+				578FB0241FB9375F00E8446D /* eason_icon@2x.jpg in Resources */,
+				578FB0041FB9374400E8446D /* 10736444.lrc in Resources */,
+				578FB0031FB9374400E8446D /* 339744.lrc in Resources */,
+				578FB0231FB9375F00E8446D /* kzxd@2x.jpg in Resources */,
+				578FAFEF1FB9372C00E8446D /* 1201111234.mp3 in Resources */,
+				578FB02D1FB9375F00E8446D /* lkq@2x.jpg in Resources */,
+				578FAFEC1FB9372C00E8446D /* 255319.mp3 in Resources */,
+				578FB0051FB9374400E8446D /* 309769.lrc in Resources */,
+				578FB0091FB9374400E8446D /* 后弦 - 小周末-bb0b7b6dec6a924c2ea9ff1dec40634c-17520166-00000000.lrc in Resources */,
+				578FB01F1FB9375F00E8446D /* dzq_icon@2x.jpg in Resources */,
+				578FB0321FB9375F00E8446D /* wf@2x.jpg in Resources */,
+				578FAFEE1FB9372C00E8446D /* 10405520.mp3 in Resources */,
+				578FB0081FB9374400E8446D /* 235319.lrc in Resources */,
+				578FB03A1FB9385D00E8446D /* MainPageCell.xib in Resources */,
+				578FAFCB1FB930BD00E8446D /* Assets.xcassets in Resources */,
+				578FAFFF1FB9374400E8446D /* 14945107.lrc in Resources */,
+				578FB0261FB9375F00E8446D /* jay@2x.jpg in Resources */,
+				578FB0221FB9375F00E8446D /* jj_icon@2x.png in Resources */,
+				578FB0071FB9374400E8446D /* 月半小夜曲.lrc in Resources */,
+				578FAFDB1FB9370400E8446D /* Musics.plist in Resources */,
+				578FB02B1FB9375F00E8446D /* kzxd_icon@2x.jpg in Resources */,
+				578FB0251FB9375F00E8446D /* wf_icon@2x.jpg in Resources */,
+				578FAFEA1FB9372C00E8446D /* 14945107.mp3 in Resources */,
+				578FB0061FB9374400E8446D /* 120125029.lrc in Resources */,
+				578FB02E1FB9375F00E8446D /* eason@2x.jpg in Resources */,
+				578FAFC91FB930BD00E8446D /* Main.storyboard in Resources */,
+				578FB0211FB9375F00E8446D /* jay_icon@2x.png in Resources */,
+				578FB0301FB9375F00E8446D /* nanquan@2x.jpg in Resources */,
+				578FAFF11FB9372C00E8446D /* 12309111.mp3 in Resources */,
+				578FB0291FB9375F00E8446D /* nanquan_icon@2x.jpg in Resources */,
+				578FB0401FB9445200E8446D /* DetailViewController.xib in Resources */,
+				578FB0281FB9375F00E8446D /* lkq_icon@2x.jpg in Resources */,
+				578FB0001FB9374400E8446D /* 10405520.lrc in Resources */,
+				578FB0021FB9374400E8446D /* 12309111.lrc in Resources */,
+				578FAFEB1FB9372C00E8446D /* 10736444.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		578FAFBC1FB930BD00E8446D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578FAFC61FB930BD00E8446D /* ViewController.swift in Sources */,
+				578FB03C1FB93A0800E8446D /* MusicModel.swift in Sources */,
+				578FB03F1FB9445200E8446D /* DetailViewController.swift in Sources */,
+				578FB0391FB9385D00E8446D /* MainPageCell.swift in Sources */,
+				578FAFC41FB930BD00E8446D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		578FAFC71FB930BD00E8446D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				578FAFC81FB930BD00E8446D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		578FAFCC1FB930BD00E8446D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				578FAFCD1FB930BD00E8446D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		578FAFD01FB930BD00E8446D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		578FAFD11FB930BD00E8446D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		578FAFD31FB930BD00E8446D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MusicDemoSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.MusicDemoSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		578FAFD41FB930BD00E8446D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MusicDemoSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.MusicDemoSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		578FAFBB1FB930BD00E8446D /* Build configuration list for PBXProject "MusicDemoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				578FAFD01FB930BD00E8446D /* Debug */,
+				578FAFD11FB930BD00E8446D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		578FAFD21FB930BD00E8446D /* Build configuration list for PBXNativeTarget "MusicDemoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				578FAFD31FB930BD00E8446D /* Debug */,
+				578FAFD41FB930BD00E8446D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 578FAFB81FB930BD00E8446D /* Project object */;
+}
