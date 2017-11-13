@@ -22,12 +22,16 @@ class MusicModel: NSObject {
 //    歌者图片
     var singerIcon: String!
     
-    override init() {
+    init(dic: [String : String]) {
         super.init()
-    }
-    init(dic: [String : AnyObject]) {
-        super.init()
-        setValuesForKeys(dic)
+//        这里有个小问题,调用这个系统方法会崩溃,所以采用手动赋值
+//        setValuesForKeys(dic)
+        icon = dic["icon"]
+        name = dic["name"]
+        singer = dic["singer"]
+        filename = dic["filename"]
+        lrcname = dic["lrcname"]
+        singerIcon = dic["singerIcon"]
     }
     override func setValue(_ value: Any?, forUndefinedKey key: String) {
         

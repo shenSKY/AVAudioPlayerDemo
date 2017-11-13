@@ -10,7 +10,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
     var model: MusicModel!
-    var data: NSMutableArray!
+    var data: [MusicModel]!
     var currentIndex: NSInteger!
     
     override func viewDidLoad() {

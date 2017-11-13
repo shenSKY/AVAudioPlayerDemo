@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     func loadData() {
         let arr = NSMutableArray.init(contentsOfFile: Bundle.main.path(forResource: "Musics", ofType: "plist")!)
         for dic in arr! {
-            let model = MusicModel.init(dic: dic as! [String : AnyObject])
+            let model = MusicModel.init(dic: dic as! [String : String])
             data.append(model)
         }
     }
@@ -58,7 +58,7 @@ extension ViewController: UITableViewDelegate , UITableViewDataSource {
         
         let vc = DetailViewController()
         vc.model = data[indexPath.row]
-        vc.data = data as! NSMutableArray;
+        vc.data = data
         vc.currentIndex = indexPath.row
         DispatchQueue.main.async {
             self.present(vc, animated: true, completion: nil)
