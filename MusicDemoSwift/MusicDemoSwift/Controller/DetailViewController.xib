@@ -13,11 +13,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="MusicDemoSwift" customModuleProvider="target">
             <connections>
-                <outlet property="MusicName" destination="V3H-X9-a09" id="xZR-L4-Wk7"/>
                 <outlet property="currentTime" destination="eDI-Ad-1wK" id="0u1-Vm-1rp"/>
                 <outlet property="img" destination="WpS-gW-n2q" id="0hA-oS-3e6"/>
                 <outlet property="lrcLabel" destination="ZW8-kI-Pbe" id="MqB-Jf-fPo"/>
                 <outlet property="lrcView" destination="GRR-8L-YMG" id="Pq6-6P-yWu"/>
+                <outlet property="musicName" destination="V3H-X9-a09" id="ZL7-F3-5cR"/>
                 <outlet property="playBtn" destination="FET-97-dkU" id="xez-ev-b87"/>
                 <outlet property="progress" destination="NJS-E0-Hm5" id="NEZ-QS-oxn"/>
                 <outlet property="singer" destination="hAx-IC-h7J" id="DrA-2l-y0R"/>
