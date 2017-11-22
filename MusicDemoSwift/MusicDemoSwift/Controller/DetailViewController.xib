@@ -61,11 +61,17 @@
                                 <rect key="frame" x="38" y="563" width="64" height="64"/>
                                 <state key="normal" image="player_btn_pre_normal"/>
                                 <state key="highlighted" image="player_btn_pre_highlight"/>
+                                <connections>
+                                    <action selector="previousAndNextBtnAction:" destination="-1" eventType="touchUpInside" id="dLk-Wx-Frp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="468-qa-r9T">
                                 <rect key="frame" x="274" y="563" width="64" height="64"/>
                                 <state key="normal" image="player_btn_next_normal"/>
                                 <state key="highlighted" image="player_btn_next_highlight"/>
+                                <connections>
+                                    <action selector="previousAndNextBtnAction:" destination="-1" eventType="touchUpInside" id="WI6-E7-TK5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FET-97-dkU">
                                 <rect key="frame" x="155.5" y="563" width="64" height="64"/>
@@ -76,6 +82,9 @@
                                 <state key="normal" image="player_btn_play_normal"/>
                                 <state key="selected" image="player_btn_pause_normal"/>
                                 <state key="highlighted" image="player_btn_play_highlight"/>
+                                <connections>
+                                    <action selector="playBtnActiosn:" destination="-1" eventType="touchUpInside" id="nYQ-RK-alR"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDI-Ad-1wK">
                                 <rect key="frame" x="20" y="526" width="46" height="21"/>
@@ -93,6 +102,12 @@
                                 <rect key="frame" x="70" y="522" width="235" height="31"/>
                                 <color key="tintColor" red="0.38262686130000001" green="0.74857175350000005" blue="0.509770155" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <action selector="touchDown_StartChange:" destination="-1" eventType="touchDown" id="t1b-fa-vjI"/>
+                                    <action selector="touchDragInside_EndChange:" destination="-1" eventType="touchDragInside" id="Llg-DE-b8j"/>
+                                    <action selector="valueChanged:" destination="-1" eventType="valueChanged" id="7at-d1-jy6"/>
+                                    <outletCollection property="gestureRecognizers" destination="pGn-Y8-K5f" appends="YES" id="lmI-32-3yB"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZW8-kI-Pbe" customClass="LrcLabel">
                                 <rect key="frame" x="187" y="502" width="0.0" height="0.0"/>
@@ -152,6 +167,11 @@
             </constraints>
             <point key="canvasLocation" x="33.5" y="74.5"/>
         </view>
+        <tapGestureRecognizer id="pGn-Y8-K5f">
+            <connections>
+                <action selector="tapSlider:" destination="-1" id="Bz9-J4-cD5"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="jay_icon.png" width="48" height="48"/>
