@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		577045971FC26DDF0042048C /* LrcLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577045961FC26DDF0042048C /* LrcLine.swift */; };
+		577045991FC26E160042048C /* LrcTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577045981FC26E160042048C /* LrcTool.swift */; };
+		577045A11FC279E70042048C /* Timer+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577045A01FC279E70042048C /* Timer+Operation.swift */; };
+		577045A31FC27ACB0042048C /* String+ConversionTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577045A21FC27ACB0042048C /* String+ConversionTime.swift */; };
+		577045A51FC27C960042048C /* CALayer+RotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577045A41FC27C960042048C /* CALayer+RotationAnimation.swift */; };
+		577045A71FC27F8B0042048C /* LrcLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577045A61FC27F8B0042048C /* LrcLabel.swift */; };
+		577045AA1FC2C16A0042048C /* LrcCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577045A81FC2C16A0042048C /* LrcCell.swift */; };
+		577045AB1FC2C16A0042048C /* LrcCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 577045A91FC2C16A0042048C /* LrcCell.xib */; };
+		577045AD1FC2C36A0042048C /* LrcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577045AC1FC2C36A0042048C /* LrcView.swift */; };
 		578FAFC41FB930BD00E8446D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578FAFC31FB930BD00E8446D /* AppDelegate.swift */; };
 		578FAFC61FB930BD00E8446D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578FAFC51FB930BD00E8446D /* ViewController.swift */; };
 		578FAFC91FB930BD00E8446D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578FAFC71FB930BD00E8446D /* Main.storyboard */; };
@@ -63,6 +72,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		577045961FC26DDF0042048C /* LrcLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LrcLine.swift; sourceTree = "<group>"; };
+		577045981FC26E160042048C /* LrcTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LrcTool.swift; sourceTree = "<group>"; };
+		577045A01FC279E70042048C /* Timer+Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+Operation.swift"; sourceTree = "<group>"; };
+		577045A21FC27ACB0042048C /* String+ConversionTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ConversionTime.swift"; sourceTree = "<group>"; };
+		577045A41FC27C960042048C /* CALayer+RotationAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+RotationAnimation.swift"; sourceTree = "<group>"; };
+		577045A61FC27F8B0042048C /* LrcLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LrcLabel.swift; sourceTree = "<group>"; };
+		577045A81FC2C16A0042048C /* LrcCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LrcCell.swift; sourceTree = "<group>"; };
+		577045A91FC2C16A0042048C /* LrcCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LrcCell.xib; sourceTree = "<group>"; };
+		577045AC1FC2C36A0042048C /* LrcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LrcView.swift; sourceTree = "<group>"; };
 		578FAFC01FB930BD00E8446D /* MusicDemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicDemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		578FAFC31FB930BD00E8446D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		578FAFC51FB930BD00E8446D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -252,6 +270,7 @@
 		578FB0331FB9380D00E8446D /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				577045981FC26E160042048C /* LrcTool.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -260,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				578FB03B1FB93A0800E8446D /* MusicModel.swift */,
+				577045961FC26DDF0042048C /* LrcLine.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -269,6 +289,10 @@
 			children = (
 				578FB0371FB9385D00E8446D /* MainPageCell.swift */,
 				578FB0381FB9385D00E8446D /* MainPageCell.xib */,
+				577045A61FC27F8B0042048C /* LrcLabel.swift */,
+				577045AC1FC2C36A0042048C /* LrcView.swift */,
+				577045A81FC2C16A0042048C /* LrcCell.swift */,
+				577045A91FC2C16A0042048C /* LrcCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -276,6 +300,9 @@
 		578FB0361FB9382D00E8446D /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				577045A01FC279E70042048C /* Timer+Operation.swift */,
+				577045A21FC27ACB0042048C /* String+ConversionTime.swift */,
+				577045A41FC27C960042048C /* CALayer+RotationAnimation.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -360,6 +387,7 @@
 				578FB02D1FB9375F00E8446D /* lkq@2x.jpg in Resources */,
 				578FAFEC1FB9372C00E8446D /* 255319.mp3 in Resources */,
 				578FB0051FB9374400E8446D /* 309769.lrc in Resources */,
+				577045AB1FC2C16A0042048C /* LrcCell.xib in Resources */,
 				578FB0091FB9374400E8446D /* 后弦 - 小周末-bb0b7b6dec6a924c2ea9ff1dec40634c-17520166-00000000.lrc in Resources */,
 				578FB01F1FB9375F00E8446D /* dzq_icon@2x.jpg in Resources */,
 				578FB0321FB9375F00E8446D /* wf@2x.jpg in Resources */,
@@ -397,11 +425,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				577045A51FC27C960042048C /* CALayer+RotationAnimation.swift in Sources */,
+				577045A11FC279E70042048C /* Timer+Operation.swift in Sources */,
 				578FAFC61FB930BD00E8446D /* ViewController.swift in Sources */,
 				578FB03C1FB93A0800E8446D /* MusicModel.swift in Sources */,
+				577045AD1FC2C36A0042048C /* LrcView.swift in Sources */,
+				577045A31FC27ACB0042048C /* String+ConversionTime.swift in Sources */,
+				577045AA1FC2C16A0042048C /* LrcCell.swift in Sources */,
 				578FB03F1FB9445200E8446D /* DetailViewController.swift in Sources */,
 				578FB0391FB9385D00E8446D /* MainPageCell.swift in Sources */,
+				577045A71FC27F8B0042048C /* LrcLabel.swift in Sources */,
+				577045991FC26E160042048C /* LrcTool.swift in Sources */,
 				578FAFC41FB930BD00E8446D /* AppDelegate.swift in Sources */,
+				577045971FC26DDF0042048C /* LrcLine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
