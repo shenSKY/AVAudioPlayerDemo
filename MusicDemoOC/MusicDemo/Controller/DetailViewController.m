@@ -208,6 +208,8 @@
     
     [self playMusic];
     
+    [self.img.layer resumeAnimate];
+    [self.progressTimer resumeTimer];
 }
 #pragma mark 状态栏设成白色
 - (UIStatusBarStyle)preferredStatusBarStyle
