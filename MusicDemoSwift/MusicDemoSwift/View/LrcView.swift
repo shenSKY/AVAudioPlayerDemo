@@ -23,12 +23,12 @@ class LrcView: UIScrollView {
         }
     }
 //    当前歌曲播放时间
-    var currentTime: TimeInterval
+    var currentTime: TimeInterval = 0
     {
-        set {
+        didSet {
 //            和数组中歌词的时间对比,找出应该显示的歌词
             let count = lrcs.count
-    
+
             for i in 0..<count {
 //                取出当前歌词
                 let lrcLine = lrcs[i]
@@ -70,9 +70,6 @@ class LrcView: UIScrollView {
                 }
             }
         }
-        get {
-            return self.currentTime
-        }
     }
 //    外面的歌词
     var lrcLabel: LrcLabel!
@@ -86,7 +83,6 @@ class LrcView: UIScrollView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupTableView()
-        currentIndex = 0
     }
     func setupTableView() {
         tableView = UITableView()
@@ -118,6 +114,10 @@ extension LrcView: UITableViewDelegate,UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LrcCell") as! LrcCell
+        cell.backgroundColor = UIColor.clear
+        if currentIndex == nil {
+            currentIndex = 0
+        }
         if indexPath.row == currentIndex {
             cell.lrcLabel.font = UIFont.systemFont(ofSize: 18)
         }else {

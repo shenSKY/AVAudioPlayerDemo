@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +18,48 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="音乐" translatesAutoresizingMaskIntoConstraints="NO" id="B3U-d6-rrq">
+                                <rect key="frame" x="155.5" y="208.5" width="64" height="64"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A simple music player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlP-C9-IlG">
+                                <rect key="frame" x="66.5" y="293.5" width="242.5" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By 神SKY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnO-7z-7bA">
+                                <rect key="frame" x="137" y="334.5" width="101.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date ：2017.11.30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdC-pb-Wk4">
+                                <rect key="frame" x="107.5" y="373.5" width="161" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4z-I7-nTi">
+                                <rect key="frame" x="167.5" y="407.5" width="41" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tlP-C9-IlG" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.9" id="7jC-th-loZ"/>
+                            <constraint firstItem="B3U-d6-rrq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BXT-bI-Ps3"/>
+                            <constraint firstItem="B3U-d6-rrq" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.7" id="EJd-s2-RNQ"/>
+                            <constraint firstItem="lnO-7z-7bA" firstAttribute="centerX" secondItem="tlP-C9-IlG" secondAttribute="centerX" id="MIM-F0-tbY"/>
+                            <constraint firstItem="p4z-I7-nTi" firstAttribute="top" secondItem="CdC-pb-Wk4" secondAttribute="bottom" constant="10" id="MZA-XE-KAK"/>
+                            <constraint firstItem="CdC-pb-Wk4" firstAttribute="top" secondItem="lnO-7z-7bA" secondAttribute="bottom" constant="10" id="jSB-mG-x3F"/>
+                            <constraint firstItem="tlP-C9-IlG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ozy-UQ-MzA"/>
+                            <constraint firstItem="CdC-pb-Wk4" firstAttribute="centerX" secondItem="lnO-7z-7bA" secondAttribute="centerX" id="rY6-DY-Sxb"/>
+                            <constraint firstItem="lnO-7z-7bA" firstAttribute="top" secondItem="tlP-C9-IlG" secondAttribute="bottom" constant="10" id="sDw-GZ-UBZ"/>
+                            <constraint firstItem="p4z-I7-nTi" firstAttribute="centerX" secondItem="CdC-pb-Wk4" secondAttribute="centerX" id="xte-I9-QWB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +68,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="音乐" width="64" height="64"/>
+    </resources>
 </document>

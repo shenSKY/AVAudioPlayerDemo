@@ -10,12 +10,9 @@ import UIKit
 
 class LrcLabel: UILabel {
 //    当前语句的进度
-    var progress: CGFloat {
-        set {
+    var progress: CGFloat = 0.0 {
+        didSet {
             setNeedsDisplay()
-        }
-        get {
-            return self.progress
         }
     }
     override func draw(_ rect: CGRect) {
