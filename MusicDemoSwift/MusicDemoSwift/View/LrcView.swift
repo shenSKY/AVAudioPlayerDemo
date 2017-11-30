@@ -86,8 +86,8 @@ class LrcView: UIScrollView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupTableView()
+        currentIndex = 0
     }
-    
     func setupTableView() {
         tableView = UITableView()
         tableView.dataSource = self

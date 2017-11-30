@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		573BBAFC1FC69C4B0007427D /* LrcLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577045A61FC27F8B0042048C /* LrcLabel.swift */; };
 		577045971FC26DDF0042048C /* LrcLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577045961FC26DDF0042048C /* LrcLine.swift */; };
 		577045991FC26E160042048C /* LrcTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577045981FC26E160042048C /* LrcTool.swift */; };
 		577045A11FC279E70042048C /* Timer+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577045A01FC279E70042048C /* Timer+Operation.swift */; };
 		577045A31FC27ACB0042048C /* String+ConversionTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577045A21FC27ACB0042048C /* String+ConversionTime.swift */; };
 		577045A51FC27C960042048C /* CALayer+RotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577045A41FC27C960042048C /* CALayer+RotationAnimation.swift */; };
-		577045A71FC27F8B0042048C /* LrcLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577045A61FC27F8B0042048C /* LrcLabel.swift */; };
 		577045AA1FC2C16A0042048C /* LrcCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577045A81FC2C16A0042048C /* LrcCell.swift */; };
 		577045AB1FC2C16A0042048C /* LrcCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 577045A91FC2C16A0042048C /* LrcCell.xib */; };
 		577045AD1FC2C36A0042048C /* LrcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577045AC1FC2C36A0042048C /* LrcView.swift */; };
@@ -425,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				573BBAFC1FC69C4B0007427D /* LrcLabel.swift in Sources */,
 				577045A51FC27C960042048C /* CALayer+RotationAnimation.swift in Sources */,
 				577045A11FC279E70042048C /* Timer+Operation.swift in Sources */,
 				578FAFC61FB930BD00E8446D /* ViewController.swift in Sources */,
@@ -434,7 +435,6 @@
 				577045AA1FC2C16A0042048C /* LrcCell.swift in Sources */,
 				578FB03F1FB9445200E8446D /* DetailViewController.swift in Sources */,
 				578FB0391FB9385D00E8446D /* MainPageCell.swift in Sources */,
-				577045A71FC27F8B0042048C /* LrcLabel.swift in Sources */,
 				577045991FC26E160042048C /* LrcTool.swift in Sources */,
 				578FAFC41FB930BD00E8446D /* AppDelegate.swift in Sources */,
 				577045971FC26DDF0042048C /* LrcLine.swift in Sources */,

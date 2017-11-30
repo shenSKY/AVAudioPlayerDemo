@@ -104,6 +104,7 @@ class DetailViewController: UIViewController {
         playBtn.isSelected = true
 //        设置锁屏信息显示
         setLockScreenDisplay()
+        
     }
 //    MARK: 设置锁屏信息显示
     func setLockScreenDisplay() {
@@ -225,6 +226,9 @@ class DetailViewController: UIViewController {
         }
         setUIMessageWith(model)
         playMusic()
+        
+        img.layer.resumeAnimate()
+        progressTimer.resumeTimer()
     }
 //    MARK: 锁屏控制
     override func remoteControlReceived(with event: UIEvent?) {

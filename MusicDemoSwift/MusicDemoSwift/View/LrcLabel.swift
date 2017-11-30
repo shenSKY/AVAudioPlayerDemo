@@ -11,10 +11,10 @@ import UIKit
 class LrcLabel: UILabel {
 //    当前语句的进度
     var progress: CGFloat {
-        set{
+        set {
             setNeedsDisplay()
         }
-        get{
+        get {
             return self.progress
         }
     }
